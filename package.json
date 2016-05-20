@@ -36,6 +36,7 @@
     "tsd"
   ],
   "devDependencies": {
+    "typings": "^1.0.4",
     "typescript": "^1.8.10"
   }
 }
