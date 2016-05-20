@@ -1,0 +1,7 @@
+{
+    "name": "azure-storage",
+    "main": "lib/azure-storage.d.ts",
+    "globalDependencies": {
+        "node": "registry:dt/node#6.0.0+20160514165920"
+    }
+}

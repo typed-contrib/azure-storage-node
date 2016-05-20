@@ -1,0 +1,41 @@
+{
+  "name": "typed-azure-storage",
+  "version": "0.10.0",
+  "description": "Type definitions for https://github.com/Azure/azure-storage-node",
+  "main": "index.js",
+  "author": "typed-contrib",
+  "license": "MIT",
+  "homepage": "https://github.com/typed-contrib/azure-storage-node#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/typed-contrib/azure-storage-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/typed-contrib/azure-storage-node/issues"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "postinstall": "typings install && cd test && typings install",
+    "test": "tsc -p test"
+  },
+  "keywords": [
+    "typings",
+    "definitions",
+    "typescript",
+    "azure",
+    "microsoft",
+    "storage",
+    "table",
+    "queue",
+    "file",
+    "blob",
+    "typed-contrib",
+    "typed",
+    "tsd"
+  ],
+  "devDependencies": {
+    "typescript": "^1.8.10"
+  }
+}

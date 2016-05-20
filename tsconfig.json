@@ -1,0 +1,7 @@
+{
+    "exclude": [
+        "test",
+        "_lib",
+        "node_modules"
+    ]
+}
