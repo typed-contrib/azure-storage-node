@@ -46,7 +46,7 @@ Some resources to help writing Typescript type definitions:
 
 ## Tests
 
-This type definitions are tested using source [azure-storage-node] samples and services tests.
+This type definitions are tested using source `azure-storage-node` `samples` and `services` tests.
  * [Samples](https://github.com/Azure/azure-storage-node/tree/master/examples/samples)
  * [Services](https://github.com/Azure/azure-storage-node/tree/master/test/services)
 
