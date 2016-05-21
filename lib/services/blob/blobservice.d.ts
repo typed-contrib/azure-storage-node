@@ -369,7 +369,7 @@ declare class BlobService extends StorageServiceClient {
     *                                                                             information for the container.
     *                                                                             `response` will contain information related to this operation.
     */
-    setContainerAcl(container: string, signedIdentifiers: StorageServiceClient.SignedIdentifiers, options: BlobService.AccessConditionsOptions, callback: ErrorOrResult<BlobService.ContainerResult>): void;
+    setContainerAcl(container: string, signedIdentifiers: StorageServiceClient.SignedIdentifiers, options: BlobService.SetContainerAclOptions, callback: ErrorOrResult<BlobService.ContainerResult>): void;
     
     /**
     * Marks the specified container for deletion.
@@ -2252,6 +2252,11 @@ declare namespace BlobService {
     export interface ContainerOptions extends StorageServiceClient.ServiceClientOptions {
         /** The metadata key/value pairs. */
         metadata?: Object;
+        /** Specifies whether data in the container may be accessed publicly and the level of access. */
+        publicAccessLevel?: string;
+    }
+    
+    export interface SetContainerAclOptions extends AccessConditionsOptions {
         /** Specifies whether data in the container may be accessed publicly and the level of access. */
         publicAccessLevel?: string;
     }
