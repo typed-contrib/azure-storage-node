@@ -21,7 +21,7 @@ declare class TableBatch {
     /**
     * Removes all of the operations from the batch.
     */
-    clear();
+    clear(): void;
     
     /**
     * Returns a boolean value indicating weather there are operations in the batch.

@@ -139,7 +139,7 @@ declare namespace StorageServiceClient {
     }
 
     export interface IRequestSigner {
-        signRequest(webResource: WebResource, callback: (err: Error) => void);
+        signRequest(webResource: WebResource, callback: (err: Error) => void): void;
     }
     
     export interface StorageServiceSettings {
