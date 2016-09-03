@@ -24,15 +24,15 @@ declare class Logger {
     */
     constructor(level?: string, loggerFunction?: (level: string, msg: string) => void);
     
-    log(level: string, msg: string);
-    emergency(msg: string);
-    critical(msg: string);
-    alert(msg: string);
-    error(msg: string);
-    warn(msg: string);
-    notice(msg: string);
-    info(msg: string);
-    debug(msg: string);
+    log(level: string, msg: string): void;
+    emergency(msg: string): void;
+    critical(msg: string): void;
+    alert(msg: string): void;
+    error(msg: string): void;
+    warn(msg: string): void;
+    notice(msg: string): void;
+    info(msg: string): void;
+    debug(msg: string): void;
      
     /**
     * The available log levels.

@@ -11,7 +11,7 @@ import { StorageServiceClient, date } from "./common/common";
 * @param {string}   [proxyUri]                  The proxyUri. By default, http://127.0.0.1
 * @return {string}                              A connection string representing the development storage credentials.
 */
-export function generateDevelopmentStorageCredentials(proxyUri?: string);
+export function generateDevelopmentStorageCredentials(proxyUri?: string): string;
 
 // ***********************************************************
 // ** TABLE SERVICE
@@ -104,7 +104,7 @@ export function createBlobServiceWithSas(hostUri: StorageServiceClient.HostConfi
 *                                                     Otherwise 'host.primaryHost' defines the primary host and 'host.secondaryHost' defines the secondary host.
 * @return {BlobService}                               A new BlobService object with the anonymous credentials.
 */
-export function createBlobServiceAnonymous(host: StorageServiceClient.HostConfiguration);
+export function createBlobServiceAnonymous(host: StorageServiceClient.HostConfiguration): BlobService;
 
 // ***********************************************************
 // ** FILE SERVICE
@@ -217,7 +217,7 @@ export interface AccountAccessPolicy extends StorageServiceClient.AccessPolicy {
 * @param {string}                     [storageAccessKey]                                The storage access key.
 * @param {object}                     sharedAccessPolicy                                The shared access policy.
 */
-export function generateAccountSharedAccessSignature(storageAccountOrConnectionString: string, storageAccessKey: string, sharedAccessAccountPolicy: AccountSharedAccessPolicy);
+export function generateAccountSharedAccessSignature(storageAccountOrConnectionString: string, storageAccessKey: string, sharedAccessAccountPolicy: AccountSharedAccessPolicy): string;
 
 export {
     Constants,

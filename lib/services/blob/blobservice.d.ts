@@ -1664,7 +1664,7 @@ declare class BlobService extends StorageServiceClient {
     generateBlockIdPrefix(): string;
     
     /** Get a block id according to prefix and block number. */
-    getBlockId(prefix, number): string;
+    getBlockId(prefix: string, number: number): string;
     
     
     // ***********************************************************

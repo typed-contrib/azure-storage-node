@@ -1,4 +1,7 @@
 {
+    "compilerOptions": {
+        "noImplicitAny": true
+    },
     "exclude": [
         "test",
         "_lib",

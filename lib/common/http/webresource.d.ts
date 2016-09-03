@@ -151,7 +151,7 @@ declare class WebResource {
     */
     withBody(body: any): this;
     
-    addOptionalMetadataHeaders(metadata: Map<any>);
+    addOptionalMetadataHeaders(metadata: Map<any>): this;
     
     static validResponse(statusCode: number): boolean;
     
