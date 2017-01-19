@@ -183,7 +183,7 @@ export namespace entityGenerator {
 
         constructor(value: T, type?: string);
     }
-    export interface EntityProperty {
+    export interface EntityPropertyInterface {
         <T>(): EntityProperty<T>;
     }
 
